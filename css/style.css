@@ -1,0 +1,337 @@
+@font-face {
+	font-family:"Story Regular";
+	src:url("../fonts/CF_Jack_Story_Regular/CFJackStory-Regular.eot?") format("eot"),
+	url("../fonts/CF_Jack_Story_Regular/CFJackStory-Regular.woff") format("woff"),
+	url("../fonts/CF_Jack_Story_Regular/CFJackStory-Regular.ttf") format("truetype"),
+	url("../fonts/CF_Jack_Story_Regular/CFJackStory-Regular.svg#CFJackStory-Regular") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"Muller Bold";
+	src:url("../fonts/Muller-Bold/MullerBold.eot?") format("eot"),
+	url("../fonts/Muller-Bold/MullerBold.woff") format("woff"),
+	url("../fonts/Muller-Bold/MullerBold.ttf") format("truetype"),
+	url("../fonts/Muller-Bold/MullerBold.svg#Muller-Bold") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"Muller Regular";
+	src:url("../fonts/Muller-Regular/MullerRegular.eot?") format("eot"),
+	url("../fonts/Muller-Regular/MullerRegular.woff") format("woff"),
+	url("../fonts/Muller-Regular/MullerRegular.ttf") format("truetype"),
+	url("../fonts/Muller--Regular/MullerRegular.svg#Muller-Regular") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"VisbyCF";
+	src:url("../fonts/VisbyCF.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@keyframes hiden{
+	to{
+		opacity: 0;
+	}
+}
+
+@keyframes shows{
+	to{
+		opacity: 1;
+	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.head{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/top.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@media screen and (max-width: 1920px){
+	.head{
+		background-size: contain;
+	}
+}
+
+.logo{
+	position: absolute;
+	top:-2vw;
+	left: 8vw;
+	background-color: white;
+	width: 10vw;
+	transform: rotate(-5deg);
+	border-bottom-right-radius: 5%;
+	border-bottom-left-radius: 5%;
+}
+
+p{
+	font-family: "Muller Bold", sans-serif;
+	color: #44a09b;
+	font-size: 32px;
+	font-size: 2.4vw;
+	font-weight: bold;
+
+}
+strong{
+	font-family: "Muller Bold", sans-serif;
+	font-weight: bold;
+}
+h1{
+	font-family: "Muller Regular", sans-serif;
+	color: #000000;
+	font-size: 48px;
+	font-size: 3.6vw;
+	font-weight: normal;
+}
+h3{
+	font-family: "VisbyCF", sans-serif;
+	font-size: 42px;
+	font-size: 3vw;
+	margin-left: 4vw;
+	margin-right: 4vw;
+	text-transform: uppercase;
+	text-decoration:  none;
+	color: #3a4a62;
+}
+ul{
+	display: flex;
+	align-content: space-around;
+	flex-direction: column;
+	font-size: 22px;
+	font-size: 1.4vw;
+	color: #575656;
+	margin-left: 5vw;
+	margin-right: 4vw;
+	list-style-type: none;
+}
+ul li {
+	position: relative;
+}
+li:before{
+	content: '>';
+	position: absolute;
+	top:0;
+	left:-30px;
+	color: #fc5648;
+}
+.register ul:last-of-type li:before{
+	content: '❤';
+	left: -40px;
+}
+a{
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration:  none;
+	line-height: 200%;	
+}
+
+.toptext{
+	padding-left: 8vw;
+	padding-top: 18vw;
+}
+.btn{
+	width: 38vw;
+	height: 10vw;
+	margin-top: 5vw;
+	margin-left: 0%;
+	padding-left: 6vw;
+	background: white;
+	padding-right: 50px;
+	border-radius: 0 999rem 999rem 0;
+	
+}
+.btn span {
+	display: block;
+	font-family: "Muller Regular", sans-serif;
+	color: #ff8141;
+	font-size: 28px;
+	font-size: 1.4vw;
+	font-weight: bold;
+	text-align: center;
+	line-height: 400%;
+}
+.reg{
+	margin: 0 auto;
+	background: #ff8141;
+	width:25vw;
+	height: 3vw;
+	border-radius: 999rem;
+}
+.reg a{
+	display: block;
+	font-family: "Muller Bold", sans-serif;
+	font-size: 34px;
+	font-size: 1.8vw;
+	text-align: center;
+}
+
+.scroll{
+	margin-top: 3vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.scroll a{
+	font-family: "VisbyCF", sans-serif;
+	font-size: 16px;
+	font-size: 1.2vw;
+}
+.triangle{
+	display: flex;
+	justify-content: center;
+	width: 2vw;
+	border: 2vw solid transparent;	
+	border-top: 2vw solid white;	
+}
+.triangle2{
+	margin-top: -1.5vw;
+	width: 1vw;
+	border: 1vw solid transparent;	
+	border-top: 1vw solid #68cac3;	
+}
+
+.second{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.videos{
+	position: relative;
+	width: 55vw;
+	height: 44.5vw;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.beforeplay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/7ways.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	animation-name: hiden;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.videos:hover .beforeplay{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+.circle{
+	position: relative;
+	width: 8vw;	
+	height: 8vw;
+	cursor: pointer;
+	background: black;
+	border-radius: 50%;
+	opacity: 0.7;
+	z-index: 999;
+	animation-name: hiden;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.circle:active{
+	animation-play-state: running;
+}
+.circle:active ~ .lookat{
+	animation-play-state: running;
+}
+.circle:active ~ .beforeplay{
+	animation-play-state: running;
+}
+.circle:active ~ .afterplay{
+	animation-play-state: running;
+}
+.triangle3{position: absolute;
+	left: 40%;
+	top: 30%;
+	width: 0px;
+	height: 0px;
+	border: 1.5vw solid transparent;	
+	border-left: 2vw solid white;
+}
+
+.lookat{
+	position: absolute;
+	top: 53%;
+	left: 56%;
+	opacity: 1;
+	animation-name: hiden;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.arrow{
+	width: 3vw; 
+	height: 9vw;
+	transform: rotate(-40deg);
+}
+.what{
+	margin-top: -3vw;
+	margin-left: 4vw;
+	width: 9vw;
+	height: 7vw;
+	font-family: "Story Regular", sans-serif;
+	font-size: 30px;
+	font-size: 1.6vw;
+	font-style: normal;
+	text-align: center;
+	transform: rotate(15deg);	
+}
+
+.register{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	width: 45vw;
+	font-family: "VisbyCF", sans-serif;
+}
+.afterplay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-flow: row wrap;
+	opacity: 0;
+	animation-name: shows;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.afterplay img{
+	width: 50%;
+	height: 33%;
+}
+.footer{
+	width: 100%;
+	background: #273d50;
+	text-align: center;
+	margin: auto;
+}
+.footer h3{
+	color: white;
+	line-height: 200%;
+	font-size: 55px;
+	font-size: 4vw;
+}
